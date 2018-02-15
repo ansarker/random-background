@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Demo Random Background Color</title>
+</head>
+
+<style>
+
+	body {
+		width: 60%;
+		background: #000000;
+		margin: 40px auto;
+	}
+
+	h1 {
+		font-family: 'Open Sans', sans-serif;
+		color: #ffffff;
+		font-size: 40px;
+	}
+
+	h2#colorName {
+		background: #fff;
+		border: 1px solid #eee;
+		padding: 10px 25px;
+	}
+
+	p {
+		color: #eeeeee;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 18px;
+	}
+
+</style>
+
+<body class="randomBackground" id="randomBackground">
+	<h1>Random Background Color</h1>
+	<!-- Add Some Paragraph..... -->
+	<h2 id="colorName">Color Name</h2>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</p>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</p>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</p>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</p>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</p>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</p>
+</body>
+
+<script>
+	
+	setInterval(function(){
+		var red = Math.round(Math.random() * 255);		// Red color 
+		var green = Math.round(Math.random() * 255);	// Green color
+		var blue = Math.round(Math.random() * 255);		// Blue color
+
+		var bg = "background: rgb(" + red + ", " + green + ", " + blue + ");";
+		var cb = "background: rgb(" + blue + ", " + red + ", " + green + ");";
+		var col = "color: rgb(" + red + ", " + green + ", " + blue + ");";
+		var element = document.getElementById("randomBackground");
+		var element1 = document.getElementById("colorName");
+		element.style = bg;
+		element1.innerText = "Mitraw : "+ bg;
+		element1.style = col + cb;
+	}, 1000);
+
+</script>
+
+</html>
